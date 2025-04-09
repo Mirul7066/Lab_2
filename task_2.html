@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Conference Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 300px;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    textarea {
+      height: 80px;
+    }
+    .form-section {
+      margin-top: 15px;
+    }
+    .button-group {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Conference Registration Form</h2>
+
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" min="18" max="99" value="18" required>
+
+    <div class="form-section">
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male"> <label for="male" style="display:inline;">Male</label><br>
+      <input type="radio" id="female" name="gender" value="Female"> <label for="female" style="display:inline;">Female</label>
+    </div>
+
+    <div class="form-section">
+      <label for="country">Country of Residence:</label>
+      <select id="country" name="country">
+        <option value="Malaysia">Malaysia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="form-section">
+      <label>Areas of Interest:</label>
+      <input type="checkbox" name="interest" value="Software Development"> Software Development<br>
+      <input type="checkbox" name="interest" value="Data Science"> Data Science<br>
+      <input type="checkbox" name="interest" value="Cybersecurity"> Cybersecurity<br>
+      <input type="checkbox" name="interest" value="AI"> Artificial Intelligence
+    </div>
+
+    <div class="form-section">
+      <label>Experience Level:</label>
+      <input type="radio" name="experience" value="Beginner"> Beginner<br>
+      <input type="radio" name="experience" value="Intermediate"> Intermediate<br>
+      <input type="radio" name="experience" value="Advanced"> Advanced
+    </div>
+
+    <div class="form-section">
+      <label for="comments">Comments or Questions:</label>
+      <textarea id="comments" name="comments" placeholder="Any comments or questions?"></textarea>
+    </div>
+
+    <div class="button-group">
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
+
+</body>
+</html>
